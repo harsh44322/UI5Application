@@ -29,5 +29,8 @@
       "@sap/ux-ui5-tooling"
     ]
   },
-  "sapuxLayer": "CUSTOMER_BASE"
+  "sapuxLayer": "CUSTOMER_BASE",
+  "dependencies": {
+    "latest": "^0.2.0"
+  }
 }
