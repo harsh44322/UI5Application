@@ -73,6 +73,11 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "employee":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/employees.json",
+        "settings": {}
       }
     },
     "resources": {

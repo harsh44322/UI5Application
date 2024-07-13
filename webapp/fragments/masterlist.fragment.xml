@@ -1,0 +1,32 @@
+<core:FragmentDefinition 
+    xmlns:core="sap.ui.core"
+    xmlns:table2="sap.ui.mdc.table" 
+    xmlns:table="sap.ui.table"
+    xmlns="sap.m"
+    >
+    <table:TreeTable id="idForTreeTable" rows="{/employees}">
+        <table:extension>
+            <OverflowToolbar id="idForOverFlwTB">
+                <Title id="idForTreeTblTitle" text="Employee Details"></Title>
+            </OverflowToolbar>
+            <table2:Column id="idForCol1">
+                <Label id="idForLbl1" text="Id"></Label>
+                <table2:template>
+                    <Text id="idForTxt1" text="{id}"></Text>
+                </table2:template>
+            </table2:Column>
+            <table2:Column id="idForCol2">
+                <Label id="idForLbl2" text="First Name"></Label>
+                <table2:template>
+                    <Text id="idForTxt2" text="{firstname}"></Text>
+                </table2:template>
+            </table2:Column>
+            <table2:Column id="idForCol3">
+                <Label id="idForLbl3" text="Last Name"></Label>
+                <table2:template>
+                    <Text id="idForTxt3" text="{lastname}"></Text>
+                </table2:template>
+            </table2:Column>
+        </table:extension>
+    </table:TreeTable>
+</core:FragmentDefinition>
