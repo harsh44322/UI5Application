@@ -7,13 +7,9 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("project1.controller.View1", {
+        return Controller.extend("project1.controller.View2", {
             onInit: function () {
 
-            },
-            onNav: function(){
-                var oRouter = this.getOwnerComponent().getRouter(this);
-                oRouter.navTo("detail");
             }
         });
     });

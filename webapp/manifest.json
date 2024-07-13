@@ -89,25 +89,34 @@
         "async": true,
         "viewPath": "project1.view",
         "controlAggregation": "pages",
-        "controlId": "app",
-        "clearControlAggregation": false
+        "controlId": "app"
       },
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": ":?query:",
-          "target": [
-            "TargetView1"
-          ]
+          "pattern": "",
+          "target": "TargetView1"
+          
+        },
+        {
+          "name": "detail",
+          "pattern": "detail",
+          "target": "detail"
+          
         }
       ],
       "targets": {
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
-          "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
+        },
+        "detail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewId": "detail",
+          "viewName": "View2"
         }
       }
     },
