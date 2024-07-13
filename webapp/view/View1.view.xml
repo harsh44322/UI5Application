@@ -3,7 +3,10 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Text id="idForText" text="Hello World"/>
+            <VBox id="idForVBox1">
+                <Text id="idForText" class="sapUiTinyMarginBegin sapUiTinyMarginBottom sapUiTinyMarginTop" text="Hello World"/>
+                <Button id="idForNavBtn" class="sapUiTinyMarginBegin sapUiTinyMarginBottom" text="Navigate" press="onNav"/>
+            </VBox>
         </content>
     </Page>
 </mvc:View>
