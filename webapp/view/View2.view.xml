@@ -22,4 +22,5 @@
             <viz.feeds:FeedItem id="categoryAxisFeed" uid="categoryAxis" type="Dimension" values="Year"/>
         </viz:feeds>
     </viz:VizFrame>
+    <Panel ></Panel>
 </mvc:View>
