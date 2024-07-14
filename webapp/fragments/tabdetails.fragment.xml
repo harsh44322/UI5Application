@@ -1,0 +1,77 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <OverflowToolbar >
+        <Title text="Employee Details"></Title>
+    </OverflowToolbar>
+    <IconTabBar class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter key="info" text="Info">
+                <VBox >
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Employee ID: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/id}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="First Name: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/firstName}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop sapUiMediumMarginBottom">
+                        <Label text="Last Name: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/lastName}"></Text>
+                    </HBox>
+                </VBox>     
+            </IconTabFilter>
+			<IconTabFilter key="Contact" text="Contact" >
+                <VBox >
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Email ID: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/email}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop sapUiLargeMarginBottom">
+                        <Label text="Phone Number: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/phone}"></Text>
+                    </HBox>
+                </VBox>
+            </IconTabFilter>
+			<IconTabFilter key="Address" text="Adress"  >
+                <VBox >
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Street: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/address/street}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="City: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/address/city}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="State: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/address/state}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom">
+                        <Label text="Zip Code: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/address/zip}"></Text>
+                    </HBox>
+                </VBox>
+            </IconTabFilter>
+            <IconTabFilter key="Work" text="Work Details"  >
+                <VBox >
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Designation: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/position}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Department: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/department}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Salary: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/salary}"></Text>
+                    </HBox>
+                    <HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom">
+                        <Label text="Hire Date: "></Label>
+                        <Text class="sapUiSmallMarginBegin" text="{newModel>/hireDate}"></Text>
+                    </HBox>
+                </VBox>
+            </IconTabFilter>
+		</items>
+	</IconTabBar>
+</core:FragmentDefinition>
