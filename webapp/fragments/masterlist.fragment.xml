@@ -4,29 +4,37 @@
     xmlns:table="sap.ui.table"
     xmlns="sap.m"
     >
-    <table:TreeTable id="idForTreeTable" rows="{/employees}">
+    <table:Table id="idForTreeTable" rows="{employee>/employees}">
         <table:extension>
             <OverflowToolbar id="idForOverFlwTB">
                 <Title id="idForTreeTblTitle" text="Employee Details"></Title>
             </OverflowToolbar>
-            <table2:Column id="idForCol1">
-                <Label id="idForLbl1" text="Id"></Label>
-                <table2:template>
-                    <Text id="idForTxt1" text="{id}"></Text>
-                </table2:template>
-            </table2:Column>
-            <table2:Column id="idForCol2">
-                <Label id="idForLbl2" text="First Name"></Label>
-                <table2:template>
-                    <Text id="idForTxt2" text="{firstname}"></Text>
-                </table2:template>
-            </table2:Column>
-            <table2:Column id="idForCol3">
-                <Label id="idForLbl3" text="Last Name"></Label>
-                <table2:template>
-                    <Text id="idForTxt3" text="{lastname}"></Text>
-                </table2:template>
-            </table2:Column>
         </table:extension>
-    </table:TreeTable>
+            <table:columns>
+            <table:Column id="idForCol1" hAlign="Center">
+                <Label id="idForLbl1" text="Id"></Label>
+                <table:template>
+                    <Text id="idForTxt1" text="{employee>id}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column id="idForCol2" hAlign="Center">
+                <Label id="idForLbl2" text="First Name"></Label>
+                <table:template>
+                    <Text id="idForTxt2" text="{employee>firstName}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column id="idForCol3" hAlign="Center">
+                <Label id="idForLbl3" text="Last Name"></Label>
+                <table:template>
+                    <Text id="idForTxt3" text="{employee>lastName}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column id="idForCol4" width="6rem" hAlign="Center">
+                <Label id="idForLbl4" text="Detail"></Label>
+                <table:template>
+                    <Button id="idForNavBtm" icon="sap-icon://navigation-right-arrow" press="onNav"></Button>
+                </table:template>
+            </table:Column>
+        </table:columns>
+    </table:Table>
 </core:FragmentDefinition>

@@ -69,15 +69,11 @@
           "bundleName": "project1.i18n.i18n"
         }
       },
-      "": {
-        "dataSource": "mainService",
-        "preload": true,
-        "settings": {}
-      },
       "employee":{
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/employees.json",
-        "settings": {}
+        "settings": {},
+        "preload": false
       }
     },
     "resources": {

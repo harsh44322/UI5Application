@@ -4,7 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <VBox id="idForVBox1">
-                <Text id="idForTxt2" text="This is View2"></Text>
+                <Text id="idForTxt2" text="{newModel>/id}"></Text>
             </VBox>
         </content>
     </Page>
