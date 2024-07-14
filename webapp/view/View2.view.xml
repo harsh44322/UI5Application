@@ -1,10 +1,25 @@
-<mvc:View xmlns:controls="sap.viz.ui5.controls" controllerName="project1.controller.View2"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <mvc:content>
-        <OverflowToolbar id="idForOverFlwTB2">
-            <Title id="idForPerformanceTitle" text="Perfomance Chart"></Title>
-        </OverflowToolbar>
-        <controls:VizFrame id="idForPerformanceChart" width="100%"></controls:VizFrame>
-    </mvc:content>
+<mvc:View
+    controllerName="project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds">
+    
+    <viz:VizFrame id="idForPerformanceChart" width="100%" height="400px" vizType="stacked_column">
+        <viz:dataset>
+            <viz.data:FlattenedDataset data="{newModel>/performance}">
+                <viz.data:dimensions>
+                    <viz.data:DimensionDefinition name="Year" value="{newModel>year}"/>
+                </viz.data:dimensions>
+                <viz.data:measures>
+                    <viz.data:MeasureDefinition name="Feedback Score" value="{newModel>score}"/>
+                </viz.data:measures>
+            </viz.data:FlattenedDataset>
+        </viz:dataset>
+        <viz:feeds>
+            <viz.feeds:FeedItem id="valueAxisFeed" uid="valueAxis" type="Measure" values="Feedback Score"/>
+            <viz.feeds:FeedItem id="categoryAxisFeed" uid="categoryAxis" type="Dimension" values="Year"/>
+        </viz:feeds>
+    </viz:VizFrame>
 </mvc:View>
