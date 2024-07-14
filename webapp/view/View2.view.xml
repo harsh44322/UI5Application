@@ -1,11 +1,10 @@
-<mvc:View controllerName="project1.controller.View2"
+<mvc:View xmlns:controls="sap.viz.ui5.controls" controllerName="project1.controller.View2"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content>
-            <VBox id="idForVBox1">
-                <Text id="idForTxt2" text="{newModel>/id}"></Text>
-            </VBox>
-        </content>
-    </Page>
+    <mvc:content>
+        <OverflowToolbar id="idForOverFlwTB2">
+            <Title id="idForPerformanceTitle" text="Perfomance Chart"></Title>
+        </OverflowToolbar>
+        <controls:VizFrame id="idForPerformanceChart" width="100%"></controls:VizFrame>
+    </mvc:content>
 </mvc:View>
