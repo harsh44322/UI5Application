@@ -34,7 +34,7 @@
             <table:Column id="idForCol4" width="6rem" hAlign="Center">
                 <Label id="idForLbl4" text="Detail"></Label>
                 <table:template>
-                    <Button id="idForNavBtm" icon="sap-icon://navigation-right-arrow" press="onNav"></Button>
+                    <Button id="idForNavBtm" icon="sap-icon://navigation-right-arrow" type="Default" press="onNav"></Button>
                 </table:template>
             </table:Column>
         </table:columns>
