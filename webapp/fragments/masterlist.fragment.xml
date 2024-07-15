@@ -6,8 +6,10 @@
     >
     <table:Table id="idForTreeTable" rows="{employee>/employees}">
         <table:extension>
-            <OverflowToolbar id="idForOverFlwTB">
+            <OverflowToolbar id="idForOverFlwTB">    
                 <Title id="idForTreeTblTitle" text="Employee Details"></Title>
+                <ToolbarSpacer ></ToolbarSpacer>
+                <SearchField width="20%" liveChange="onLiveChange" placeholder="Search Name" enableSuggestions="true"/>
             </OverflowToolbar>
         </table:extension>
             <table:columns>
