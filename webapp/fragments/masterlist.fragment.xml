@@ -20,7 +20,7 @@
                 </table:template>
             </table:Column>
             <table:Column id="idForCol2" hAlign="Center">
-                <Label id="idForLbl2" text="First Name K"></Label>
+                <Label id="idForLbl2" text="First Name"></Label>
                 <table:template>
                     <Text id="idForTxt2" text="{employee>firstName}"></Text>
                 </table:template>
