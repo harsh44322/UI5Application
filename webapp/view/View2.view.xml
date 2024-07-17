@@ -26,5 +26,5 @@
     <Panel ></Panel> 
     <Panel >
         <core:Fragment id="idForFrgDec2" fragmentName="project1.fragments.tabdetails" type="XML"/>
-    </Panel>
+    </Panel> 
 </mvc:View>
