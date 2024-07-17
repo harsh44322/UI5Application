@@ -16,13 +16,13 @@
                 <viz.data:measures>
                     <viz.data:MeasureDefinition name="Feedback Score" value="{newModel>score}"/>
                 </viz.data:measures>
-            </viz.data:FlattenedDataset>
+            </viz.data:FlattenedDataset> 
         </viz:dataset>
         <viz:feeds>
             <viz.feeds:FeedItem id="valueAxisFeed" uid="valueAxis" type="Measure" values="Feedback Score"/>
             <viz.feeds:FeedItem id="categoryAxisFeed" uid="categoryAxis" type="Dimension" values="Year"/>
         </viz:feeds>
-    </viz:VizFrame>
+    </viz:VizFrame> 
     <Panel ></Panel>
     <Panel >
         <core:Fragment id="idForFrgDec2" fragmentName="project1.fragments.tabdetails" type="XML"/>
