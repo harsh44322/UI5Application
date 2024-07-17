@@ -9,7 +9,7 @@
     
     <viz:VizFrame id="idForPerformanceChart" width="auto" height="300px" vizType="stacked_column">
         <viz:dataset>
-            <viz.data:FlattenedDataset data="{newModel>/performance}">
+            <viz.data:FlattenedDataset data="{newModel>/performance}"> 
                 <viz.data:dimensions>
                     <viz.data:DimensionDefinition name="Year" value="{newModel>year}"/>
                 </viz.data:dimensions>
