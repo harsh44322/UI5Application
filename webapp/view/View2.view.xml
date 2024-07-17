@@ -6,7 +6,6 @@
     xmlns:viz="sap.viz.ui5.controls"
     xmlns:viz.data="sap.viz.ui5.data"
     xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"> 
-    
     <viz:VizFrame id="idForPerformanceChart" width="auto" height="300px" vizType="stacked_column">
         <viz:dataset>
             <viz.data:FlattenedDataset data="{newModel>/performance}"> 
