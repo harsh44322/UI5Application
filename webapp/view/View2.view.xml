@@ -23,7 +23,7 @@
             <viz.feeds:FeedItem id="categoryAxisFeed" uid="categoryAxis" type="Dimension" values="Year"/>
         </viz:feeds>
     </viz:VizFrame> 
-    <Panel ></Panel>
+    <Panel ></Panel> 
     <Panel >
         <core:Fragment id="idForFrgDec2" fragmentName="project1.fragments.tabdetails" type="XML"/>
     </Panel>
